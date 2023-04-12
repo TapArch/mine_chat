@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:text="@string/t"
+        android:textSize="20sp"
+        android:textColor="#673AB7"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content">
+        <requestFocus/>
+    </TextView>
+
+    <EditText
+        android:id="@+id/main3_et"
+        android:hint="@string/account"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginBottom="10dp"
+        android:lines="1"
+        android:maxLines="1"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
+    </EditText>
+
+    <EditText
+        android:id="@+id/main3_et2"
+        android:hint="@string/passWord"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:lines="1"
+        android:maxLines="1"
+        android:imeOptions="actionDone"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
+    </EditText>
+
+    <Button
+        android:id="@+id/main3_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signup"
+        tools:ignore="InvalidId,SpeakableTextPresentCheck">
+
+    </Button>
+
+</LinearLayout>
