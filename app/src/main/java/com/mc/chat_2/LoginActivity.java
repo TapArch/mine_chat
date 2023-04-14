@@ -17,7 +17,7 @@ import com.mc.user.UserInfo;
 import com.mc.utils.CommonUtils;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button but,but2;
+    private Button but2;
     private EditText et,et1;
 
     private Handler mainHandler;
@@ -32,7 +32,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private void initView(){
-        but = findViewById(R.id.zc_button);
+//        but = findViewById(R.id.zc_button);
         but2 = findViewById(R.id.button2);
         et = findViewById(R.id.et);
         et1 = findViewById(R.id.et1);
@@ -40,7 +40,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         dao = new UserDao();
         mainHandler = new Handler(getMainLooper());
 
-        but.setOnClickListener(this);
+//        but.setOnClickListener(this);
         but2.setOnClickListener(this);
     }
 
@@ -48,19 +48,19 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.zc_button:
-                doSignUp();
-                break;
+//            case R.id.zc_button:
+//                doSignUp();
+//                break;
             case R.id.button2:
                 doLogin();
                 break;
         }
     }
 
-    private void doSignUp(){
-        Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
-        startActivity(intent);
-    }
+//    private void doSignUp(){
+//        Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
+//        startActivity(intent);
+//    }
 
     private void doLogin(){
         String name = et.getText().toString().trim();
