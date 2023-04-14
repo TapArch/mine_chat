@@ -47,21 +47,21 @@
             android:layout_marginTop="50dp"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/zc_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginRight="25dp"
-                android:text="@string/signup" />
+<!--            <Button-->
+<!--                android:id="@+id/zc_button"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:visibility="invisible"-->
+<!--                android:text="@string/signup"/>-->
+<!--                android:layout_marginRight="25dp"-->
+<!--                android:layout_weight="1"-->
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginLeft="25dp"
                 android:text="@string/login" />
-
+<!--            android:layout_marginLeft="25dp"-->
+<!--            android:layout_weight="1"-->
         </LinearLayout>
 </LinearLayout>
