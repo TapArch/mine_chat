@@ -10,7 +10,7 @@ import java.sql.Statement;
 
 public class DBOpenHelper {
     private static Connection connection = null;
-    private static final String URL = "jdbc:mysql:///users";
+    private static final String URL = "jdbc:mysql:///mydata?characterEncoding=UTF8&useSSL=false";
     private static final String USER = "root";
     private static final String PASSWORD = "";
 
