@@ -1,4 +1,4 @@
-package com.mc.client;
+package com.mc;
 
 import android.os.Message;
 import android.os.Handler;
