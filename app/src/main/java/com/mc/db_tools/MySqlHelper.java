@@ -9,7 +9,7 @@ import java.sql.Statement;
 
 public class MySqlHelper {
     private static final String driver = "com.mysql.jdbc.Driver";
-    private static final String URL = "jdbc:mysql://:3306/users";
+    private static final String URL = "jdbc:mysql://:3306/mydata?characterEncoding=UTF8&useSSL=false";
     private static final String USER = "root";
     private static final String PASSWORD = "";
 
