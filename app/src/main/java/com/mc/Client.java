@@ -11,7 +11,7 @@ import java.io.PrintWriter;
 import java.net.Socket;
 
 public class Client extends Thread{
-    private final String HOST = "47.113.206.22";
+    private final String HOST = "";
     private final int PORT = 19524;
     private Socket socket = null;
     private PrintWriter pw;
