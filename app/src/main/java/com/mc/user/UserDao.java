@@ -35,7 +35,7 @@ public class UserDao extends MySqlHelper {
 
         try {
             getConnection();
-            String sql = "select * from user where user_name=? and user_pwd=?";
+            String sql = "select * from users where user_name=? and user_pwd=?";
             preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setObject(1,name);
             preparedStatement.setObject(2,password);
@@ -63,7 +63,7 @@ public class UserDao extends MySqlHelper {
         //判断是否存在相同用户addCheck();
         if(!(addCheck(userInfo))){
             try {
-                String sql = "insert into user value(?,?)";
+                String sql = "insert into users value(?,?)";
                 preparedStatement = connection.prepareStatement(sql);
                 preparedStatement.setObject(1,userInfo.getName());
                 preparedStatement.setObject(2,userInfo.getPassword());
