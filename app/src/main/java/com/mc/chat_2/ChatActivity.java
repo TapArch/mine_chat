@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.mc.client.Client;
+import com.mc.Client;
 import com.mc.utils.CommonUtils;
 
 import java.io.PrintWriter;
