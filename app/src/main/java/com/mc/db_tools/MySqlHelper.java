@@ -9,9 +9,9 @@ import java.sql.Statement;
 
 public class MySqlHelper {
     private static final String driver = "com.mysql.jdbc.Driver";
-    private static final String URL = "jdbc:mysql://:3306/mydata?characterEncoding=UTF8&useSSL=false";
+    private static final String URL = "jdbc:mysql://47.115.210.176:3306/mydata?characterEncoding=UTF8&useSSL=false";
     private static final String USER = "root";
-    private static final String PASSWORD = "";
+    private static final String PASSWORD = "Root${1110}";
 
     public static Connection connection =null;
     public static Statement statement = null;

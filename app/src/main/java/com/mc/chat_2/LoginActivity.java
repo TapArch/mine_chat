@@ -52,6 +52,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 //                doSignUp();
 //                break;
             case R.id.button2:
+                but2.animate().translationX(2000).setDuration(2000).setStartDelay(2900);
                 doLogin();
                 break;
         }

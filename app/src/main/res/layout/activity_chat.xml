@@ -1,66 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center|top"
-    android:orientation="vertical"
-    tools:context=".ChatActivity">
+    android:orientation="vertical">
 
-    <TextView
-        android:text="@string/t"
-        android:textSize="25sp"
-        android:textColor="#673AB7"
-        android:gravity="center"
-        android:layout_marginBottom="10dp"
-        android:singleLine="true"
-        android:ellipsize="marquee"
-        android:marqueeRepeatLimit="marquee_forever"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
+<!--    <TextView-->
+<!--        android:text="Room"-->
+<!--        android:gravity="center|left"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textSize="25dp"-->
+<!--        android:background="#FF6200EE"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="35dp">-->
+<!--    </TextView>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_rv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <requestFocus/>
-    </TextView>
-
-    <TextView
-        android:id="@+id/chat_se_tv"
-        android:layout_marginTop="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="85dp"
-        android:layout_marginBottom="10dp">
-
-    </TextView>
-
-    <TextView
-        android:id="@+id/chat_re_tv"
-        android:layout_width="match_parent"
-        android:layout_height="51dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="230dp">
-    </TextView>
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#E8EAEC"
+        tools:ignore="MissingConstraints">
+    </androidx.recyclerview.widget.RecyclerView>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFEFE"
         android:gravity="center"
-        android:orientation="horizontal">
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/main_img_bt2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/expression"
+            android:layout_marginRight="3dp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
+        </ImageButton>
 
         <EditText
-            android:id="@+id/chat_sd_et"
+            android:id="@+id/main_et"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/re_et_shape"
+            android:maxLines="4"
             android:hint="Message"
-            android:layout_width="300dp"
-            android:layout_height="60dp">
-
+            android:padding="10dp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck">
         </EditText>
 
-        <Button
-            android:id="@+id/chat_sd_bt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Send">
+        <ImageButton
+            android:id="@+id/main_img_bt"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/add"
+            android:layout_marginLeft="3dp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
+        </ImageButton>
 
+        <Button
+            android:id="@+id/main_bt"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:backgroundTint="#000000"
+            android:background="@drawable/send"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck">
         </Button>
 
     </LinearLayout>
